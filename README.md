@@ -7,11 +7,12 @@ We can use this command to:
 - git init – initialize a git in the folder
 - git commit -m ‘some description’ --allow-empty – commit changes without any files
 
-// strings from the github.com when we setup already existing local repo with the github.com:
+Strings from the github.com when we setup already existing local repo with the github.com:
 - git remote add origin {{origin url}}  – add url as a remote server
 - git branch -M master – set master as a branch connected with remote server ?
 - git push -u origin master – push local master to the main on the remote ?
 
+Other:
 - git checkout -b {{branch_name}} – create a new branch
 - gco -b {{branch_name}} – also create a new branch
 - npm install – install a node package manager in the folder
@@ -40,6 +41,7 @@ Another revert methods: https://server-gu.ru/git-undo-changes/
 - git commit --amend – edit the last’s commit description in the vim-editor
 - git commit --amend -m ‘new description’ – edit the last’s commit description in the single line
 
+To view results
 - git diff – show the difference between commits
 - git log – show last commits
 - git log -n {{count}} – show last {{count}} commits
@@ -49,6 +51,7 @@ Another revert methods: https://server-gu.ru/git-undo-changes/
 - git remote add {{new-remote-name}} {{remote-url}} – add new remote server
 - git remote remove  origin – delete current remote with the name origin
 
+To work with files:
 - mkdir {{folder_name}} – create a folder
 - rm -fr {{filename}} – remove the file or the folder
 - touch {{filename}} – create a file
@@ -58,15 +61,18 @@ Another revert methods: https://server-gu.ru/git-undo-changes/
 - micro {{filename or .}} – open file or directory in Micro (it’s a custom terminal editor)
 - pstorm {{filename or .}} – open file or directory in PHPStorm
 
+To echo in the file:
 - echo ‘some text here’ > {{filename}} – create a file and write one line of text
 - echo ‘some text here’ >> {{filename}} – append the one line of text to the existing file
 
+To swith between folders:
 - cd {{folder_name of path like ../.. }}
 - cd - – go back to the previews directory (toggle)
  
 - git fetch – download branches from the default origin remote server (useful in a teamwork – when somebody create a new branch)
 - git fetch {{remote_name}} – download branches from the certain remote server (useful in a teamwork – when somebody create a new branch)
 
+Work with npm:
 - npm install – install packages from the package.json file
 - npm i – the same as above
 - npm i {{package_name}} – install certain package as a production-dependency  to the node_modules and write information about it in the package.json file and package-lock.json
@@ -76,11 +82,14 @@ Another revert methods: https://server-gu.ru/git-undo-changes/
 
 - npx - run node module from the node_modules/bin and global scope. If it’s not installed yet npx download it and run (with cache). 
 
+To view folders like a tree:
 - tree -L 2 – show 2 levels of the directory tree
 
+To run:
 - npm run – list all lifecycle scripts from the package.json
 - npm run {{script_name}} – run a script from the package.json
 - mpm
+- npx
 
 HEAD – the last commit on the branch 
 .gitignore – (node_modules)
