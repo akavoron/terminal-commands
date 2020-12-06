@@ -1,5 +1,5 @@
 # terminal-commands
-Some useful terminal's commands for everyday work
+Some useful terminal commands for everyday work
 
 
 We can use this command to:
