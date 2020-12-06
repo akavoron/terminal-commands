@@ -35,9 +35,7 @@ Another revert methods: https://server-gu.ru/git-undo-changes/
 - git reset HEAD~1 ?
 - revert 1 last commit from the HEAD ?
 - revert n last commits from the HEAD ? 
- 
 - git clean -fd – delete unstaged files and directories
-
 - git commit --amend – edit the last’s commit description in the vim-editor
 - git commit --amend -m ‘new description’ – edit the last’s commit description in the single line
 
@@ -46,6 +44,7 @@ To view results
 - git log – show last commits
 - git log -n {{count}} – show last {{count}} commits
 
+Remote:
 - git remote – show remote servers
 - git remote -v – show the detailed information about remote servers
 - git remote add {{new-remote-name}} {{remote-url}} – add new remote server
@@ -69,6 +68,7 @@ To swith between folders:
 - cd {{folder_name of path like ../.. }}
 - cd - – go back to the previews directory (toggle)
  
+Fetch:
 - git fetch – download branches from the default origin remote server (useful in a teamwork – when somebody create a new branch)
 - git fetch {{remote_name}} – download branches from the certain remote server (useful in a teamwork – when somebody create a new branch)
 
@@ -80,16 +80,14 @@ Work with npm:
 - npm i {{package_name}} -D – the same as above
 - npm i {{package_name}} -g – install certain package as a global-dependency (not recommended)
 
-- npx - run node module from the node_modules/bin and global scope. If it’s not installed yet npx download it and run (with cache). 
-
 To view folders like a tree:
 - tree -L 2 – show 2 levels of the directory tree
 
 To run:
+- npx - run node module from the node_modules/bin and global scope. If it’s not installed yet npx download it and run (with cache). 
 - npm run – list all lifecycle scripts from the package.json
 - npm run {{script_name}} – run a script from the package.json
 - mpm
-- npx
 
 HEAD – the last commit on the branch 
 .gitignore – (node_modules)
