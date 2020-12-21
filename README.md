@@ -99,7 +99,7 @@ How to close a vim:
 Rules:
 - use mems with pull requests (for the distraction after a hard work)
 - create a commit when we have done something e.g. meaningful changeset
-- when we create a commit we should describe what the commit do and why (it’s like instruction for the change). 
+- when we create a commit we should describe what the commit do, for what and why (it’s like instruction for the change). 
  https://vvscode.github.io/otus--javascript-basic/lesson06/lecture.html#/1/28 
 - many commits – it’s useful and good
 - new task - new branch (in this exercise we should do 2 branch with many commits, different files to each task)
